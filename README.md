@@ -4,10 +4,10 @@
  ### to run tests:
    mvn clean test
    
- ###Description:
+ ### Description:
     Your task is to write library application. It is quite obvious how library works, so no point to explain it here :).
          
- ####Non-functional requirements:
+ #### Non-functional requirements:
          
         - should be written in Java ( Java 8 is recommended but other version are fine too),
         - should NOT contain any user interface (by UI I mean REST API,  Swing, gwt, vaadin, html, command line, javascript etc),
@@ -16,7 +16,7 @@
         - unit tests will be additional benefit
         - please do not use Spring or Hibernate
          
- ####Library requirements
+ #### Library requirements
          
         1. Library contains books to lend (at the beginning there are no books in the library)
         2. Book consist of title, year and author.
@@ -28,5 +28,5 @@
         9. Should allow to lent a book by ID ( should be forbidden if copy with given ID is already lent). Should allow to pass the name of the person who lend the book.
         10. Should allow to see all book's details by ID (title, author, year, information if it is available or lent together with person name).
         
-  ####If you found requirements too difficult, please implement as much points as you can.
+  #### If you found requirements too difficult, please implement as much points as you can.
 
