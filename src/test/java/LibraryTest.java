@@ -25,18 +25,13 @@ public class LibraryTest {
     }
 
     @Test
-    void libraryShouldBeEmptyAtTheBeginning() {
+    void libraryShouldBeEmptyAtStartApp() {
         library.list();
         assertEquals("Books in library:\r\nTotal number of books: 0, number of books lend: 0\r\n", systemOutContent.toString());
     }
 
     @Test
-    void shouldBeIndeticalBookWhenTitleYearAuthorAreTheSame(){
-
-    }
-
-    @Test
-    void afterInsertNewBookShouldPrintBookWithRightId(){
+    void shouldAddNewBookNotExistsInLibrary(){
         int expectedId = Objects.hash("Pan Tadeusz",1825,"Adam Mickiewicz");
         library.add("Pan Tadeusz", 1825, "Adam Mickiewicz");
         assertEquals("Added new book. Id: "+expectedId+", Title: Pan Tadeusz, Year: 1825, Author: Adam Mickiewicz\r\n", systemOutContent.toString());
